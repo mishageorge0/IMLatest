@@ -3,7 +3,7 @@ global:
   imagePullSecret:
     name: docker-registry
   image:
-    registry: mish067
+    registry: misha2024
     tag: latest
 srv:
   bindings:
@@ -82,5 +82,5 @@ xsuaa:
     tenant-mode: dedicated
     xsappname: incident-management-{{ .Release.Namespace }}
     oauth2-configuration:
-              redirect-uris:
-                  - https://*.c-881e383.kyma.ondemand.com/**
+      redirect-uris:
+        - https://*.c-881e383.kyma.ondemand.com/**
